@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Large files
+*.pth
+*.pkl
+*.pth.tar
+
+# Data (sauf metadata)
+/data/*
+!data/plantvillage_metadata.json
+
+# Results (garder pour documentation)
+/results/*.png
