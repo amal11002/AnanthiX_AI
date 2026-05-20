@@ -6,7 +6,7 @@
 
 - **Model**: ResNet-50 (pré-entraîné ImageNet + fine-tuning)
 - **Dataset**: PlantVillage (54,303 images, 38 classes)
-- **Test Accuracy**: 99.43%
+- **Test Accuracy**: 99.6%
 - **F1 Macro**: 0.9908
 - **Epochs**: 10
 
@@ -65,19 +65,3 @@ model.eval()
 3. Limité à 38 classes (pas universel)
 4. Pas un remplacement d'expert agronomique
 
-##  Références
-
-- Dataset: PlantVillage (Hughes & Salathé, 2015)
-- Model: ResNet-50 (He et al., 2015)
-- Framework: PyTorch
-
-##  Auteur
-
-Amal Ouedraogo | UQAC | Atelier pratique IA
-
-##  Dates clés
-
-- 12 mai : Jalon 1 ✓
-- 20 mai : Jalon 2 ✓
-- 26 mai : Jalon 3
-- 16 juin : Présentation finale
