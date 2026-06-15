@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnanthiX AI — Diagnostic des plantes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- ============================================================
+     LAYOUT : SIDEBAR + MAIN
+============================================================ -->
+<div class="app-shell">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-mark">A</div>
+      <div class="brand-name">Ananth<span>iX</span></div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-link active" data-tab="workspace" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+        <span data-i18n="navWorkspace">Diagnostic</span>
+      </a>
+      <a class="sidebar-link" data-tab="about" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+        <span data-i18n="navAbout">À propos</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-controls">
+
+      <!-- Langue -->
+      <div class="ctrl-group">
+        <div class="ctrl-label" data-i18n="ctrlLang">Langue</div>
+        <div class="mini-select" id="lang-select">
+          <button class="mini-select-btn">
+            <span class="value" id="lang-value">FR</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mini-select-menu">
+            <button class="mini-select-item selected" data-value="fr">Français</button>
+            <button class="mini-select-item" data-value="en">English</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Moteur -->
+      <div class="ctrl-group">
+        <div class="ctrl-label" data-i18n="ctrlModel">Moteur de diagnostic</div>
+        <div class="mini-select" id="model-select">
+          <button class="mini-select-btn">
+            <span class="value" id="model-value">V2</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mini-select-menu">
+            {% for key, info in models.items() %}
+            <button class="mini-select-item {% if loop.first %}selected{% endif %}" data-value="{{ key }}">
+              {{ info.short }} · {{ info.tag }}
+            </button>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <!-- Zones analysées -->
+      <div class="ctrl-group">
+        <div class="ctrl-label" data-i18n="ctrlGradcam">Zones analysées</div>
+        <label class="switch-row">
+          <label class="switch">
+            <input type="checkbox" id="gradcam-toggle" checked>
+            <span class="switch-slider"></span>
+          </label>
+          <span class="switch-hint" id="gradcam-hint-label" data-i18n="ctrlGradcamHint">Afficher sur l'image</span>
+        </label>
+      </div>
+
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-text">AnanthiX AI · 2026</div>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+
+    <!-- ── WORKSPACE ── -->
+    <div class="tab-page active" id="page-workspace">
+
+      <!-- État initial : dropzone centrée -->
+      <div class="dropzone-state" id="dropzone-state">
+        <label class="dropzone" id="dropzone" for="file-input">
+          <div class="dropzone-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+          </div>
+          <div class="dropzone-title" id="dropzone-title">Déposez une image de feuille</div>
+          <div class="dropzone-sub" id="dropzone-sub">ou cliquez pour parcourir vos fichiers</div>
+          <div class="dropzone-hint" id="dropzone-hint">PNG · JPG · 10 Mo max · 38 maladies · 14 espèces</div>
+          <input type="file" id="file-input" accept="image/png, image/jpeg, image/jpg">
+        </label>
+      </div>
+
+      <!-- Loader -->
+      <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <span id="loader-text">Analyse en cours...</span>
+      </div>
+
+      <!-- Résultats : 2 colonnes -->
+      <div class="workspace" id="workspace">
+        <div class="workspace-grid">
+
+          <!-- COL GAUCHE : image -->
+          <div class="panel panel-image">
+            <div class="panel-header">
+              <div class="panel-title" id="panel-input-title">Image analysée</div>
+              <button class="gradcam-btn" id="gradcam-btn" type="button">
+                <span class="gradcam-btn-dot"></span>
+                <span id="gradcam-btn-label">Zones analysées</span>
+              </button>
+            </div>
+            <div class="panel-body">
+              <div class="image-stage" id="image-stage">
+                <img id="img-input" src="" alt="Image" class="img-base">
+                <img id="img-gradcam" src="" alt="Zones" class="img-overlay">
+                <div class="image-stage-hint" id="image-stage-hint">Survolez pour voir les zones</div>
+              </div>
+
+              <!-- Nouvelle image -->
+              <label class="btn-new-image" for="file-input" id="btn-new-image">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="17 8 12 3 7 8"/>
+                  <line x1="12" y1="3" x2="12" y2="15"/>
+                </svg>
+                <span id="btn-new-label">Analyser une autre image</span>
+              </label>
+
+              <div class="metadata-list">
+                <div class="metadata-row">
+                  <span class="label" id="meta-format-label">FORMAT</span>
+                  <span class="value" id="meta-format">—</span>
+                </div>
+                <div class="metadata-row">
+                  <span class="label" id="meta-size-label">TAILLE</span>
+                  <span class="value" id="meta-size">—</span>
+                </div>
+                <div class="metadata-row">
+                  <span class="label" id="meta-time-label">HEURE</span>
+                  <span class="value" id="meta-time">—</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- COL DROITE : diagnostic -->
+          <div class="panel panel-diag">
+            <div class="panel-header">
+              <div class="panel-title" id="panel-diag-title">Résultat du diagnostic</div>
+            </div>
+            <div class="panel-body">
+
+              <!-- Maladie + plante + sévérité -->
+              <div class="diag-fields">
+                <div class="diag-field full">
+                  <div class="label" id="lbl-disease">MALADIE DÉTECTÉE</div>
+                  <div class="value large" id="val-disease">—</div>
+                </div>
+                <div class="diag-field">
+                  <div class="label" id="lbl-plant">PLANTE</div>
+                  <div class="value" id="val-plant">—</div>
+                </div>
+                <div class="diag-field">
+                  <div class="label" id="lbl-severity">GRAVITÉ</div>
+                  <div class="value"><span class="severity-chip" id="val-severity">—</span></div>
+                </div>
+              </div>
+
+              <!-- Niveau de confiance simplifié -->
+              <div class="confidence-block">
+                <div class="conf-badge-wrap">
+                  <span class="conf-badge" id="conf-badge">—</span>
+                </div>
+                <div class="confidence-bar">
+                  <div class="confidence-fill" id="conf-fill" style="width:0%;"></div>
+                </div>
+                <!-- Détails repliables -->
+                <details class="conf-details">
+                  <summary id="conf-details-label">Voir le détail</summary>
+                  <div class="conf-detail-inner">
+                    <div class="conf-detail-row">
+                      <span id="conf-label-static">Score de confiance</span>
+                      <span class="mono" id="conf-value">0.00%</span>
+                    </div>
+                    <div class="conf-detail-row">
+                      <span id="lbl-model">Moteur</span>
+                      <span class="mono" id="val-model">—</span>
+                    </div>
+                  </div>
+                </details>
+              </div>
+
+              <!-- Top 3 repliable -->
+              <details class="ranking-details">
+                <summary id="rank-summary">Autres hypothèses</summary>
+                <table class="ranking-table">
+                  <tbody id="ranking-body"></tbody>
+                </table>
+              </details>
+
+              <!-- Fiche maladie -->
+              <div class="disease-tabs-wrap" id="disease-tabs-wrap"></div>
+
+              <!-- Bouton PDF -->
+              <button class="btn-pdf" id="btn-pdf" style="display:none;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span id="btn-pdf-label">Télécharger le rapport</span>
+              </button>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── ABOUT ── -->
+    <div class="tab-page" id="page-about">
+      <div class="about-wrap">
+        <div class="eyebrow" data-i18n="aboutEyebrow">À PROPOS</div>
+        <h1 data-i18n="aboutTitle">À propos d'AnanthiX AI</h1>
+        <p class="about-lead" data-i18n="aboutLead">Projet de recherche appliquée sur le diagnostic des maladies des plantes par deep learning.</p>
+
+        <div class="about-content">
+          <h2 data-i18n="aboutH1">Mission</h2>
+          <p data-i18n="aboutP1">AnanthiX AI fournit un diagnostic assisté par IA des maladies des plantes pour les professionnels agricoles, les agronomes et les producteurs. La plateforme combine une classification haute précision avec un raisonnement visuel explicable pour soutenir une prise de décision fiable sur le terrain.</p>
+
+          <h2 data-i18n="aboutH2">Méthodologie</h2>
+          <p data-i18n="aboutP2">Le moteur de diagnostic est un ResNet-50 fine-tuné, entraîné sur PlantVillage (54 303 images, 38 classes, 14 espèces) et enrichi avec PlantDoc (2 670 images terrain, ×10) pour améliorer la robustesse en conditions réelles.</p>
+
+          <h2 data-i18n="aboutH3">Explicabilité</h2>
+          <p data-i18n="aboutP3">Chaque prédiction est accompagnée d'une visualisation des zones analysées (Grad-CAM) et d'un seuil de confiance à trois niveaux pour prévenir les recommandations peu fiables.</p>
+
+          <h2 data-i18n="aboutH5">Limites</h2>
+          <p data-i18n="aboutP5">Le modèle couvre 38 classes sur 14 espèces. Précision terrain : 70 %. Une validation agronomique reste nécessaire pour toute décision de traitement.</p>
+
+          <h2 data-i18n="aboutH6">Projet</h2>
+          <p data-i18n="aboutP6">Projet académique — UQAC, Atelier pratique en IA I. Auteure : Amal Ouedraogo. Encadrement : Prof. Julien Maitre, Ph.D.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
