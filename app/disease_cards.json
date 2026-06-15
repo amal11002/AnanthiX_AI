@@ -1,0 +1,1436 @@
+{
+  "Apple___Apple_scab": {
+    "class_id": 0,
+    "plant_fr": "Pommier",
+    "plant_en": "Apple",
+    "disease_fr": "Tavelure du pommier",
+    "disease_en": "Apple scab",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Taches olive à brun foncé sur les feuilles",
+      "Feuilles qui jaunissent et tombent prématurément",
+      "Fruits déformés avec croûtes liégeuses"
+    ],
+    "symptoms_en": [
+      "Olive to dark brown spots on leaves",
+      "Leaves yellowing and falling prematurely",
+      "Deformed fruits with corky scabs"
+    ],
+    "treatment_fr": [
+      "Ramasser et détruire les feuilles tombées",
+      "Tailler les branches malades en hiver",
+      "Fongicide à base de soufre au printemps"
+    ],
+    "treatment_en": [
+      "Collect and destroy fallen leaves",
+      "Prune diseased branches in winter",
+      "Sulfur-based fungicide in spring"
+    ],
+    "prevention_fr": [
+      "Planter des variétés résistantes (Liberty, Florina)",
+      "Aérer la canopée par une taille régulière",
+      "Éviter l'arrosage par aspersion"
+    ],
+    "prevention_en": [
+      "Plant resistant varieties (Liberty, Florina)",
+      "Open up canopy with regular pruning",
+      "Avoid overhead watering"
+    ]
+  },
+  "Apple___Black_rot": {
+    "class_id": 1,
+    "plant_fr": "Pommier",
+    "plant_en": "Apple",
+    "disease_fr": "Pourriture noire du pommier",
+    "disease_en": "Black rot",
+    "is_healthy": false,
+    "severity": "critique",
+    "symptoms_fr": [
+      "Taches circulaires pourpres sur feuilles avec centre brun",
+      "Chancres sur les branches",
+      "Fruits qui pourrissent en noir en gardant leur forme"
+    ],
+    "symptoms_en": [
+      "Purple circular spots on leaves with brown center",
+      "Cankers on branches",
+      "Fruits rot black while keeping their shape"
+    ],
+    "treatment_fr": [
+      "Couper et brûler les branches infectées (chancres)",
+      "Retirer immédiatement les fruits momifiés",
+      "Fongicide à base de cuivre ou captane"
+    ],
+    "treatment_en": [
+      "Cut and burn infected branches (cankers)",
+      "Immediately remove mummified fruits",
+      "Copper-based or captan fungicide"
+    ],
+    "prevention_fr": [
+      "Élaguer pour favoriser l'aération",
+      "Détruire les sources d'inoculum (bois mort, fruits au sol)",
+      "Éviter les blessures sur les branches"
+    ],
+    "prevention_en": [
+      "Prune to improve air circulation",
+      "Destroy inoculum sources (dead wood, fallen fruits)",
+      "Avoid wounds on branches"
+    ]
+  },
+  "Apple___Cedar_apple_rust": {
+    "class_id": 2,
+    "plant_fr": "Pommier",
+    "plant_en": "Apple",
+    "disease_fr": "Rouille grillagée du pommier",
+    "disease_en": "Cedar apple rust",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Taches jaune-orange vif sur la face supérieure des feuilles",
+      "Structures filamenteuses brunes sous les feuilles",
+      "Fruits parfois déformés"
+    ],
+    "symptoms_en": [
+      "Bright yellow-orange spots on upper leaf surface",
+      "Brown filamentous structures under leaves",
+      "Sometimes deformed fruits"
+    ],
+    "treatment_fr": [
+      "Fongicide préventif (myclobutanil) au printemps",
+      "Retirer les feuilles atteintes",
+      "Éliminer les genévriers à proximité (hôte alternant)"
+    ],
+    "treatment_en": [
+      "Preventive fungicide (myclobutanil) in spring",
+      "Remove affected leaves",
+      "Remove nearby junipers (alternate host)"
+    ],
+    "prevention_fr": [
+      "Distancer pommiers et genévriers (minimum 500 m si possible)",
+      "Planter des variétés résistantes (Liberty, Enterprise)",
+      "Surveillance printanière"
+    ],
+    "prevention_en": [
+      "Keep apples and junipers apart (500m minimum if possible)",
+      "Plant resistant varieties (Liberty, Enterprise)",
+      "Spring monitoring"
+    ]
+  },
+  "Apple___healthy": {
+    "class_id": 3,
+    "plant_fr": "Pommier",
+    "plant_en": "Apple",
+    "disease_fr": "Plante saine",
+    "disease_en": "Healthy plant",
+    "is_healthy": true,
+    "severity": "saine",
+    "symptoms_fr": [
+      "Aucun symptôme détecté",
+      "Feuillage vert uniforme"
+    ],
+    "symptoms_en": [
+      "No symptoms detected",
+      "Uniform green foliage"
+    ],
+    "treatment_fr": [
+      "Aucun traitement nécessaire",
+      "Continuer les bonnes pratiques culturales"
+    ],
+    "treatment_en": [
+      "No treatment needed",
+      "Continue good cultural practices"
+    ],
+    "prevention_fr": [
+      "Inspecter les arbres au printemps et en été",
+      "Tailler annuellement",
+      "Surveiller l'humidité"
+    ],
+    "prevention_en": [
+      "Inspect trees in spring and summer",
+      "Annual pruning",
+      "Monitor humidity"
+    ]
+  },
+  "Blueberry___healthy": {
+    "class_id": 4,
+    "plant_fr": "Myrtillier",
+    "plant_en": "Blueberry",
+    "disease_fr": "Plante saine",
+    "disease_en": "Healthy plant",
+    "is_healthy": true,
+    "severity": "saine",
+    "symptoms_fr": [
+      "Aucun symptôme détecté",
+      "Feuillage vert vif"
+    ],
+    "symptoms_en": [
+      "No symptoms detected",
+      "Bright green foliage"
+    ],
+    "treatment_fr": [
+      "Aucun traitement nécessaire",
+      "Maintenir un sol acide (pH 4.5-5.5)"
+    ],
+    "treatment_en": [
+      "No treatment needed",
+      "Maintain acidic soil (pH 4.5-5.5)"
+    ],
+    "prevention_fr": [
+      "Pailler avec des copeaux de pin",
+      "Arrosage régulier sans excès",
+      "Inspection bimensuelle"
+    ],
+    "prevention_en": [
+      "Mulch with pine chips",
+      "Regular watering without excess",
+      "Bi-weekly inspection"
+    ]
+  },
+  "Cherry___healthy": {
+    "class_id": 5,
+    "plant_fr": "Cerisier",
+    "plant_en": "Cherry",
+    "disease_fr": "Plante saine",
+    "disease_en": "Healthy plant",
+    "is_healthy": true,
+    "severity": "saine",
+    "symptoms_fr": [
+      "Aucun symptôme détecté",
+      "Feuillage vert sain"
+    ],
+    "symptoms_en": [
+      "No symptoms detected",
+      "Healthy green foliage"
+    ],
+    "treatment_fr": [
+      "Aucun traitement nécessaire",
+      "Continuer le suivi cultural"
+    ],
+    "treatment_en": [
+      "No treatment needed",
+      "Continue cultural monitoring"
+    ],
+    "prevention_fr": [
+      "Tailler après récolte",
+      "Surveiller au printemps (période sensible)",
+      "Maintenir un bon drainage"
+    ],
+    "prevention_en": [
+      "Prune after harvest",
+      "Monitor in spring (sensitive period)",
+      "Maintain good drainage"
+    ]
+  },
+  "Cherry___Powdery_mildew": {
+    "class_id": 6,
+    "plant_fr": "Cerisier",
+    "plant_en": "Cherry",
+    "disease_fr": "Oïdium du cerisier",
+    "disease_en": "Powdery mildew",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Poudre blanche sur les feuilles et jeunes pousses",
+      "Feuilles déformées et enroulées",
+      "Réduction de la croissance"
+    ],
+    "symptoms_en": [
+      "White powder on leaves and young shoots",
+      "Deformed and curled leaves",
+      "Reduced growth"
+    ],
+    "treatment_fr": [
+      "Fongicide à base de soufre",
+      "Pulvérisation de bicarbonate de soude (solution bio)",
+      "Tailler les parties atteintes"
+    ],
+    "treatment_en": [
+      "Sulfur-based fungicide",
+      "Baking soda spray (organic option)",
+      "Prune affected parts"
+    ],
+    "prevention_fr": [
+      "Espacer les arbres pour l'aération",
+      "Éviter les excès d'azote",
+      "Tailler pour ouvrir la canopée"
+    ],
+    "prevention_en": [
+      "Space trees for air circulation",
+      "Avoid excess nitrogen",
+      "Prune to open canopy"
+    ]
+  },
+  "Corn___Cercospora_leaf_spot Gray_leaf_spot": {
+    "class_id": 7,
+    "plant_fr": "Maïs",
+    "plant_en": "Corn (maize)",
+    "disease_fr": "Cercosporiose (tache grise)",
+    "disease_en": "Cercospora / Gray leaf spot",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Petites taches rectangulaires gris-brun sur les feuilles",
+      "Lésions alignées avec les nervures",
+      "Feuilles qui jaunissent et sèchent"
+    ],
+    "symptoms_en": [
+      "Small gray-brown rectangular spots on leaves",
+      "Lesions aligned with veins",
+      "Leaves yellowing and drying"
+    ],
+    "treatment_fr": [
+      "Fongicide (strobilurine ou triazole) en début d'infection",
+      "Retirer les débris végétaux infectés",
+      "Rotation des cultures"
+    ],
+    "treatment_en": [
+      "Fungicide (strobilurin or triazole) at early infection",
+      "Remove infected plant debris",
+      "Crop rotation"
+    ],
+    "prevention_fr": [
+      "Variétés résistantes",
+      "Rotation sur 2 ans minimum (non-maïs)",
+      "Travail du sol pour enfouir les résidus"
+    ],
+    "prevention_en": [
+      "Resistant varieties",
+      "Minimum 2-year non-corn rotation",
+      "Tillage to bury residues"
+    ]
+  },
+  "Corn___Common_rust": {
+    "class_id": 8,
+    "plant_fr": "Maïs",
+    "plant_en": "Corn (maize)",
+    "disease_fr": "Rouille commune du maïs",
+    "disease_en": "Common rust",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Petites pustules brun-rouge sur les deux faces des feuilles",
+      "Pustules ovales à allongées",
+      "Feuilles qui jaunissent autour des pustules"
+    ],
+    "symptoms_en": [
+      "Small reddish-brown pustules on both leaf surfaces",
+      "Oval to elongated pustules",
+      "Leaves yellowing around pustules"
+    ],
+    "treatment_fr": [
+      "Fongicide (triazole) si infection précoce",
+      "Surveiller en début de saison humide",
+      "Pas de traitement nécessaire si maïs déjà mature"
+    ],
+    "treatment_en": [
+      "Fungicide (triazole) if early infection",
+      "Monitor at start of humid season",
+      "No treatment needed if corn already mature"
+    ],
+    "prevention_fr": [
+      "Hybrides résistants (la majorité le sont)",
+      "Semis précoce pour éviter la pression",
+      "Rotation des cultures"
+    ],
+    "prevention_en": [
+      "Resistant hybrids (most are)",
+      "Early sowing to avoid pressure",
+      "Crop rotation"
+    ]
+  },
+  "Corn___healthy": {
+    "class_id": 9,
+    "plant_fr": "Maïs",
+    "plant_en": "Corn (maize)",
+    "disease_fr": "Plante saine",
+    "disease_en": "Healthy plant",
+    "is_healthy": true,
+    "severity": "saine",
+    "symptoms_fr": [
+      "Aucun symptôme détecté",
+      "Feuilles vertes et droites"
+    ],
+    "symptoms_en": [
+      "No symptoms detected",
+      "Green upright leaves"
+    ],
+    "treatment_fr": [
+      "Aucun traitement nécessaire",
+      "Continuer la fertilisation équilibrée"
+    ],
+    "treatment_en": [
+      "No treatment needed",
+      "Continue balanced fertilization"
+    ],
+    "prevention_fr": [
+      "Surveillance hebdomadaire en saison humide",
+      "Rotation des cultures",
+      "Désherbage régulier"
+    ],
+    "prevention_en": [
+      "Weekly monitoring in humid season",
+      "Crop rotation",
+      "Regular weeding"
+    ]
+  },
+  "Corn___Northern_Leaf_Blight": {
+    "class_id": 10,
+    "plant_fr": "Maïs",
+    "plant_en": "Corn (maize)",
+    "disease_fr": "Helminthosporiose du nord",
+    "disease_en": "Northern leaf blight",
+    "is_healthy": false,
+    "severity": "critique",
+    "symptoms_fr": [
+      "Longues lésions gris-vert puis brunes en forme de cigare",
+      "Lésions de 2 à 15 cm sur les feuilles",
+      "Feuilles qui flétrissent et meurent"
+    ],
+    "symptoms_en": [
+      "Long gray-green then brown cigar-shaped lesions",
+      "Lesions 2 to 15 cm on leaves",
+      "Leaves wilting and dying"
+    ],
+    "treatment_fr": [
+      "Fongicide (triazole ou strobilurine) au stade V8-V10",
+      "Détruire les résidus infectés",
+      "Labour profond"
+    ],
+    "treatment_en": [
+      "Fungicide (triazole or strobilurin) at V8-V10 stage",
+      "Destroy infected residues",
+      "Deep plowing"
+    ],
+    "prevention_fr": [
+      "Hybrides résistants (gènes Ht)",
+      "Rotation sur 2 ans",
+      "Élimination des chaumes"
+    ],
+    "prevention_en": [
+      "Resistant hybrids (Ht genes)",
+      "2-year rotation",
+      "Stubble removal"
+    ]
+  },
+  "Grape___Black_rot": {
+    "class_id": 11,
+    "plant_fr": "Vigne",
+    "plant_en": "Grape",
+    "disease_fr": "Black rot de la vigne",
+    "disease_en": "Black rot",
+    "is_healthy": false,
+    "severity": "critique",
+    "symptoms_fr": [
+      "Taches brunes circulaires avec halo plus sombre sur feuilles",
+      "Petits points noirs (pycnides) au centre des taches",
+      "Grappes momifiées noires"
+    ],
+    "symptoms_en": [
+      "Brown circular spots with darker halo on leaves",
+      "Small black dots (pycnidia) at center of spots",
+      "Black mummified clusters"
+    ],
+    "treatment_fr": [
+      "Fongicide (myclobutanil, mancozèbe) dès la floraison",
+      "Retirer les grappes momifiées",
+      "Brûler les sarments infectés"
+    ],
+    "treatment_en": [
+      "Fungicide (myclobutanil, mancozeb) from flowering",
+      "Remove mummified clusters",
+      "Burn infected canes"
+    ],
+    "prevention_fr": [
+      "Effeuillage pour aérer la zone fruitière",
+      "Élimination des sources d'inoculum",
+      "Variétés tolérantes"
+    ],
+    "prevention_en": [
+      "Leaf removal for canopy aeration",
+      "Eliminate inoculum sources",
+      "Tolerant varieties"
+    ]
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "class_id": 12,
+    "plant_fr": "Vigne",
+    "plant_en": "Grape",
+    "disease_fr": "Esca (rougeole noire)",
+    "disease_en": "Esca (Black Measles)",
+    "is_healthy": false,
+    "severity": "critique",
+    "symptoms_fr": [
+      "Bandes interveinales jaunes puis brunes (tigrures)",
+      "Baies tachetées de noir (rougeole)",
+      "Mort soudaine de ceps entiers (forme apoplectique)"
+    ],
+    "symptoms_en": [
+      "Yellow then brown interveinal stripes (tiger-stripe)",
+      "Berries spotted with black (measles)",
+      "Sudden death of entire vines (apoplectic form)"
+    ],
+    "treatment_fr": [
+      "Pas de traitement curatif efficace",
+      "Curetage des bois infectés (chirurgie de la vigne)",
+      "Arrachage et remplacement des ceps morts"
+    ],
+    "treatment_en": [
+      "No effective curative treatment",
+      "Surgical removal of infected wood",
+      "Uproot and replace dead vines"
+    ],
+    "prevention_fr": [
+      "Tailler par temps sec uniquement",
+      "Désinfecter les outils de taille entre chaque cep",
+      "Protéger les plaies de taille (mastic, peinture)"
+    ],
+    "prevention_en": [
+      "Prune only in dry weather",
+      "Disinfect tools between vines",
+      "Protect pruning wounds (mastic, paint)"
+    ]
+  },
+  "Grape___healthy": {
+    "class_id": 13,
+    "plant_fr": "Vigne",
+    "plant_en": "Grape",
+    "disease_fr": "Plante saine",
+    "disease_en": "Healthy plant",
+    "is_healthy": true,
+    "severity": "saine",
+    "symptoms_fr": [
+      "Aucun symptôme détecté",
+      "Feuillage vert uniforme"
+    ],
+    "symptoms_en": [
+      "No symptoms detected",
+      "Uniform green foliage"
+    ],
+    "treatment_fr": [
+      "Aucun traitement nécessaire",
+      "Continuer la conduite habituelle"
+    ],
+    "treatment_en": [
+      "No treatment needed",
+      "Continue usual management"
+    ],
+    "prevention_fr": [
+      "Effeuillage post-floraison",
+      "Désinfection des outils de taille",
+      "Surveillance régulière"
+    ],
+    "prevention_en": [
+      "Post-flowering leaf removal",
+      "Disinfect pruning tools",
+      "Regular monitoring"
+    ]
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "class_id": 14,
+    "plant_fr": "Vigne",
+    "plant_en": "Grape",
+    "disease_fr": "Tache foliaire (Isariopsis)",
+    "disease_en": "Leaf blight (Isariopsis)",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Taches angulaires brun foncé sur les feuilles",
+      "Halo jaune autour des lésions",
+      "Défoliation prématurée si forte attaque"
+    ],
+    "symptoms_en": [
+      "Dark brown angular spots on leaves",
+      "Yellow halo around lesions",
+      "Premature defoliation if severe"
+    ],
+    "treatment_fr": [
+      "Fongicide à base de cuivre (bouillie bordelaise)",
+      "Retirer les feuilles atteintes",
+      "Améliorer la ventilation"
+    ],
+    "treatment_en": [
+      "Copper-based fungicide (Bordeaux mixture)",
+      "Remove affected leaves",
+      "Improve ventilation"
+    ],
+    "prevention_fr": [
+      "Effeuillage stratégique",
+      "Éviter l'arrosage par aspersion",
+      "Surveillance par temps humide"
+    ],
+    "prevention_en": [
+      "Strategic leaf removal",
+      "Avoid overhead watering",
+      "Monitor in humid weather"
+    ]
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "class_id": 15,
+    "plant_fr": "Oranger",
+    "plant_en": "Orange",
+    "disease_fr": "Maladie du dragon jaune (HLB)",
+    "disease_en": "Huanglongbing (Citrus greening)",
+    "is_healthy": false,
+    "severity": "critique",
+    "symptoms_fr": [
+      "Jaunissement asymétrique des feuilles",
+      "Fruits petits, déformés, verts à la base",
+      "Goût amer des fruits"
+    ],
+    "symptoms_en": [
+      "Asymmetric yellowing of leaves",
+      "Small, deformed fruits, green at the base",
+      "Bitter taste of fruits"
+    ],
+    "treatment_fr": [
+      "Aucun traitement curatif disponible",
+      "Arracher et brûler les arbres infectés",
+      "Lutter contre le vecteur (psylle asiatique)"
+    ],
+    "treatment_en": [
+      "No curative treatment available",
+      "Uproot and burn infected trees",
+      "Control the vector (Asian citrus psyllid)"
+    ],
+    "prevention_fr": [
+      "Achat de plants certifiés sains uniquement",
+      "Insecticide contre le psylle",
+      "Surveillance et signalement obligatoire"
+    ],
+    "prevention_en": [
+      "Buy only certified disease-free plants",
+      "Insecticide against psyllid",
+      "Mandatory monitoring and reporting"
+    ]
+  },
+  "Peach___Bacterial_spot": {
+    "class_id": 16,
+    "plant_fr": "Pêcher",
+    "plant_en": "Peach",
+    "disease_fr": "Tache bactérienne du pêcher",
+    "disease_en": "Bacterial spot",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Taches angulaires brun-pourpre sur feuilles",
+      "Centres des taches qui se déchirent (effet criblé)",
+      "Crevasses sur les fruits"
+    ],
+    "symptoms_en": [
+      "Angular purple-brown spots on leaves",
+      "Spot centers tearing out (shothole effect)",
+      "Cracks on fruits"
+    ],
+    "treatment_fr": [
+      "Cuivre en dormance et au débourrement",
+      "Bactéricide (oxytétracycline) si autorisé",
+      "Tailler les rameaux chancrés"
+    ],
+    "treatment_en": [
+      "Copper at dormancy and bud break",
+      "Bactericide (oxytetracycline) if allowed",
+      "Prune cankered shoots"
+    ],
+    "prevention_fr": [
+      "Variétés résistantes (Redhaven)",
+      "Éviter les blessures (vent, sable)",
+      "Brise-vents en zone ventée"
+    ],
+    "prevention_en": [
+      "Resistant varieties (Redhaven)",
+      "Avoid injuries (wind, sand)",
+      "Windbreaks in windy areas"
+    ]
+  },
+  "Peach___healthy": {
+    "class_id": 17,
+    "plant_fr": "Pêcher",
+    "plant_en": "Peach",
+    "disease_fr": "Plante saine",
+    "disease_en": "Healthy plant",
+    "is_healthy": true,
+    "severity": "saine",
+    "symptoms_fr": [
+      "Aucun symptôme détecté",
+      "Feuillage vert uniforme"
+    ],
+    "symptoms_en": [
+      "No symptoms detected",
+      "Uniform green foliage"
+    ],
+    "treatment_fr": [
+      "Aucun traitement nécessaire",
+      "Maintenir l'entretien habituel"
+    ],
+    "treatment_en": [
+      "No treatment needed",
+      "Maintain usual care"
+    ],
+    "prevention_fr": [
+      "Tailler en fin d'hiver",
+      "Chaulage du tronc au printemps",
+      "Surveillance des pucerons"
+    ],
+    "prevention_en": [
+      "Prune in late winter",
+      "Whitewash trunk in spring",
+      "Monitor aphids"
+    ]
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "class_id": 18,
+    "plant_fr": "Poivron",
+    "plant_en": "Bell pepper",
+    "disease_fr": "Tache bactérienne du poivron",
+    "disease_en": "Bacterial spot",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Petites taches d'aspect huileux sur feuilles",
+      "Taches qui deviennent brunes et nécrotiques",
+      "Lésions liégeuses sur les fruits"
+    ],
+    "symptoms_en": [
+      "Small oily-looking spots on leaves",
+      "Spots turning brown and necrotic",
+      "Corky lesions on fruits"
+    ],
+    "treatment_fr": [
+      "Spray cuivre + mancozèbe en préventif",
+      "Retirer les plants gravement atteints",
+      "Désinfecter les outils de récolte"
+    ],
+    "treatment_en": [
+      "Copper + mancozeb spray preventively",
+      "Remove severely affected plants",
+      "Disinfect harvest tools"
+    ],
+    "prevention_fr": [
+      "Semences certifiées",
+      "Rotation 3 ans avec non-solanacées",
+      "Éviter l'arrosage sur le feuillage"
+    ],
+    "prevention_en": [
+      "Certified seeds",
+      "3-year rotation with non-solanaceae",
+      "Avoid watering on foliage"
+    ]
+  },
+  "Pepper,_bell___healthy": {
+    "class_id": 19,
+    "plant_fr": "Poivron",
+    "plant_en": "Bell pepper",
+    "disease_fr": "Plante saine",
+    "disease_en": "Healthy plant",
+    "is_healthy": true,
+    "severity": "saine",
+    "symptoms_fr": [
+      "Aucun symptôme détecté",
+      "Feuilles vert vif"
+    ],
+    "symptoms_en": [
+      "No symptoms detected",
+      "Bright green leaves"
+    ],
+    "treatment_fr": [
+      "Aucun traitement nécessaire",
+      "Continuer l'entretien régulier"
+    ],
+    "treatment_en": [
+      "No treatment needed",
+      "Continue regular care"
+    ],
+    "prevention_fr": [
+      "Arrosage au pied",
+      "Paillage pour conserver l'humidité",
+      "Inspection hebdomadaire"
+    ],
+    "prevention_en": [
+      "Water at the base",
+      "Mulch to preserve moisture",
+      "Weekly inspection"
+    ]
+  },
+  "Potato___Early_blight": {
+    "class_id": 20,
+    "plant_fr": "Pomme de terre",
+    "plant_en": "Potato",
+    "disease_fr": "Alternariose (brûlure hâtive)",
+    "disease_en": "Early blight",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Taches brunes concentriques (cibles) sur feuilles basses",
+      "Jaunissement progressif autour des taches",
+      "Lésions noires enfoncées sur les tubercules"
+    ],
+    "symptoms_en": [
+      "Concentric brown target-like spots on lower leaves",
+      "Progressive yellowing around spots",
+      "Sunken black lesions on tubers"
+    ],
+    "treatment_fr": [
+      "Fongicide (chlorothalonil ou mancozèbe)",
+      "Retirer les feuilles inférieures atteintes",
+      "Buttage pour protéger les tubercules"
+    ],
+    "treatment_en": [
+      "Fungicide (chlorothalonil or mancozeb)",
+      "Remove affected lower leaves",
+      "Hilling to protect tubers"
+    ],
+    "prevention_fr": [
+      "Rotation 3 ans hors solanacées",
+      "Fertilisation azotée équilibrée",
+      "Variétés tolérantes"
+    ],
+    "prevention_en": [
+      "3-year rotation outside solanaceae",
+      "Balanced nitrogen fertilization",
+      "Tolerant varieties"
+    ]
+  },
+  "Potato___healthy": {
+    "class_id": 21,
+    "plant_fr": "Pomme de terre",
+    "plant_en": "Potato",
+    "disease_fr": "Plante saine",
+    "disease_en": "Healthy plant",
+    "is_healthy": true,
+    "severity": "saine",
+    "symptoms_fr": [
+      "Aucun symptôme détecté",
+      "Feuillage vert vigoureux"
+    ],
+    "symptoms_en": [
+      "No symptoms detected",
+      "Vigorous green foliage"
+    ],
+    "treatment_fr": [
+      "Aucun traitement nécessaire",
+      "Continuer les bonnes pratiques"
+    ],
+    "treatment_en": [
+      "No treatment needed",
+      "Continue good practices"
+    ],
+    "prevention_fr": [
+      "Rotation avec céréales",
+      "Buttage régulier",
+      "Surveiller en juin-juillet (période critique mildiou)"
+    ],
+    "prevention_en": [
+      "Rotation with cereals",
+      "Regular hilling",
+      "Monitor in June-July (late blight critical period)"
+    ]
+  },
+  "Potato___Late_blight": {
+    "class_id": 22,
+    "plant_fr": "Pomme de terre",
+    "plant_en": "Potato",
+    "disease_fr": "Mildiou de la pomme de terre",
+    "disease_en": "Late blight",
+    "is_healthy": false,
+    "severity": "critique",
+    "symptoms_fr": [
+      "Taches brunes irrégulières à bord pâle sur feuilles",
+      "Duvet blanc sur la face inférieure par temps humide",
+      "Pourriture brune des tubercules"
+    ],
+    "symptoms_en": [
+      "Irregular brown spots with pale edge on leaves",
+      "White downy growth on underside in humid weather",
+      "Brown rot of tubers"
+    ],
+    "treatment_fr": [
+      "Fongicide (cuivre, mancozèbe) en urgence",
+      "Détruire les plants infectés (ne pas composter)",
+      "Récolter par temps sec uniquement"
+    ],
+    "treatment_en": [
+      "Fungicide (copper, mancozeb) urgently",
+      "Destroy infected plants (do not compost)",
+      "Harvest only in dry weather"
+    ],
+    "prevention_fr": [
+      "Plants certifiés sains",
+      "Buttage haut pour protéger les tubercules",
+      "Surveillance pendant les périodes humides et fraîches"
+    ],
+    "prevention_en": [
+      "Certified disease-free seed potatoes",
+      "High hilling to protect tubers",
+      "Monitor during cool humid periods"
+    ]
+  },
+  "Raspberry___healthy": {
+    "class_id": 23,
+    "plant_fr": "Framboisier",
+    "plant_en": "Raspberry",
+    "disease_fr": "Plante saine",
+    "disease_en": "Healthy plant",
+    "is_healthy": true,
+    "severity": "saine",
+    "symptoms_fr": [
+      "Aucun symptôme détecté",
+      "Feuillage vert moyen sain"
+    ],
+    "symptoms_en": [
+      "No symptoms detected",
+      "Healthy medium green foliage"
+    ],
+    "treatment_fr": [
+      "Aucun traitement nécessaire",
+      "Continuer le palissage et l'entretien"
+    ],
+    "treatment_en": [
+      "No treatment needed",
+      "Continue trellising and care"
+    ],
+    "prevention_fr": [
+      "Tailler les cannes fructifères après récolte",
+      "Paillage pour limiter les adventices",
+      "Surveiller pucerons et acariens"
+    ],
+    "prevention_en": [
+      "Prune fruiting canes after harvest",
+      "Mulch to limit weeds",
+      "Monitor aphids and mites"
+    ]
+  },
+  "Soybean___healthy": {
+    "class_id": 24,
+    "plant_fr": "Soja",
+    "plant_en": "Soybean",
+    "disease_fr": "Plante saine",
+    "disease_en": "Healthy plant",
+    "is_healthy": true,
+    "severity": "saine",
+    "symptoms_fr": [
+      "Aucun symptôme détecté",
+      "Feuillage vert uniforme"
+    ],
+    "symptoms_en": [
+      "No symptoms detected",
+      "Uniform green foliage"
+    ],
+    "treatment_fr": [
+      "Aucun traitement nécessaire",
+      "Continuer la fertilisation équilibrée"
+    ],
+    "treatment_en": [
+      "No treatment needed",
+      "Continue balanced fertilization"
+    ],
+    "prevention_fr": [
+      "Rotation avec céréales",
+      "Inoculation Rhizobium au semis",
+      "Surveillance des chenilles défoliatrices"
+    ],
+    "prevention_en": [
+      "Rotation with cereals",
+      "Rhizobium inoculation at sowing",
+      "Monitor defoliating caterpillars"
+    ]
+  },
+  "Squash___Powdery_mildew": {
+    "class_id": 25,
+    "plant_fr": "Courge",
+    "plant_en": "Squash",
+    "disease_fr": "Oïdium des cucurbitacées",
+    "disease_en": "Powdery mildew",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Poudre blanche sur la face supérieure des feuilles",
+      "Feuilles qui jaunissent puis sèchent",
+      "Réduction de la photosynthèse et du rendement"
+    ],
+    "symptoms_en": [
+      "White powder on upper leaf surface",
+      "Leaves yellowing then drying",
+      "Reduced photosynthesis and yield"
+    ],
+    "treatment_fr": [
+      "Soufre en poudrage ou pulvérisation",
+      "Bicarbonate de soude + savon noir (bio)",
+      "Retirer les feuilles très atteintes"
+    ],
+    "treatment_en": [
+      "Sulfur dusting or spraying",
+      "Baking soda + soap (organic)",
+      "Remove severely affected leaves"
+    ],
+    "prevention_fr": [
+      "Espacement large entre plants",
+      "Arrosage au pied le matin",
+      "Variétés résistantes"
+    ],
+    "prevention_en": [
+      "Wide spacing between plants",
+      "Morning watering at the base",
+      "Resistant varieties"
+    ]
+  },
+  "Strawberry___healthy": {
+    "class_id": 26,
+    "plant_fr": "Fraisier",
+    "plant_en": "Strawberry",
+    "disease_fr": "Plante saine",
+    "disease_en": "Healthy plant",
+    "is_healthy": true,
+    "severity": "saine",
+    "symptoms_fr": [
+      "Aucun symptôme détecté",
+      "Feuillage vert dense"
+    ],
+    "symptoms_en": [
+      "No symptoms detected",
+      "Dense green foliage"
+    ],
+    "treatment_fr": [
+      "Aucun traitement nécessaire",
+      "Continuer le suivi régulier"
+    ],
+    "treatment_en": [
+      "No treatment needed",
+      "Continue regular monitoring"
+    ],
+    "prevention_fr": [
+      "Pailler avec paille propre",
+      "Couper les stolons non désirés",
+      "Surveillance après récolte"
+    ],
+    "prevention_en": [
+      "Mulch with clean straw",
+      "Cut unwanted runners",
+      "Monitor after harvest"
+    ]
+  },
+  "Strawberry___Leaf_scorch": {
+    "class_id": 27,
+    "plant_fr": "Fraisier",
+    "plant_en": "Strawberry",
+    "disease_fr": "Brûlure des feuilles du fraisier",
+    "disease_en": "Leaf scorch",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Petites taches pourpres irrégulières sur feuilles",
+      "Feuilles qui prennent un aspect 'brûlé'",
+      "Centre des taches qui devient gris"
+    ],
+    "symptoms_en": [
+      "Small irregular purple spots on leaves",
+      "Leaves taking a 'scorched' appearance",
+      "Spot centers becoming gray"
+    ],
+    "treatment_fr": [
+      "Fongicide (captane ou myclobutanil)",
+      "Retirer les feuilles atteintes après récolte",
+      "Éviter l'arrosage par aspersion"
+    ],
+    "treatment_en": [
+      "Fungicide (captan or myclobutanil)",
+      "Remove affected leaves after harvest",
+      "Avoid overhead watering"
+    ],
+    "prevention_fr": [
+      "Planter sur buttes pour drainage",
+      "Paillage pour éviter les éclaboussures",
+      "Renouveler les plants tous les 3 ans"
+    ],
+    "prevention_en": [
+      "Plant on mounds for drainage",
+      "Mulch to prevent splashing",
+      "Replace plants every 3 years"
+    ]
+  },
+  "Tomato___Bacterial_spot": {
+    "class_id": 28,
+    "plant_fr": "Tomate",
+    "plant_en": "Tomato",
+    "disease_fr": "Tache bactérienne de la tomate",
+    "disease_en": "Bacterial spot",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Petites taches d'aspect huileux puis brunes sur feuilles",
+      "Bord jaune autour des taches",
+      "Lésions liégeuses sur les fruits"
+    ],
+    "symptoms_en": [
+      "Small oily then brown spots on leaves",
+      "Yellow edge around spots",
+      "Corky lesions on fruits"
+    ],
+    "treatment_fr": [
+      "Spray cuivre + mancozèbe",
+      "Retirer les plants gravement atteints",
+      "Désinfecter outils et tuteurs"
+    ],
+    "treatment_en": [
+      "Copper + mancozeb spray",
+      "Remove severely affected plants",
+      "Disinfect tools and stakes"
+    ],
+    "prevention_fr": [
+      "Semences certifiées",
+      "Rotation 3 ans hors solanacées",
+      "Éviter de travailler sur plants mouillés"
+    ],
+    "prevention_en": [
+      "Certified seeds",
+      "3-year rotation outside solanaceae",
+      "Avoid working on wet plants"
+    ]
+  },
+  "Tomato___Early_blight": {
+    "class_id": 29,
+    "plant_fr": "Tomate",
+    "plant_en": "Tomato",
+    "disease_fr": "Alternariose de la tomate",
+    "disease_en": "Early blight",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Taches brunes concentriques (cibles) sur feuilles basses",
+      "Halo jaune autour des taches",
+      "Lésions sur tige et fruits près du pédoncule"
+    ],
+    "symptoms_en": [
+      "Concentric brown target-like spots on lower leaves",
+      "Yellow halo around spots",
+      "Lesions on stem and fruits near the stalk"
+    ],
+    "treatment_fr": [
+      "Fongicide (chlorothalonil, mancozèbe)",
+      "Effeuillage des feuilles basses atteintes",
+      "Paillage pour limiter les éclaboussures"
+    ],
+    "treatment_en": [
+      "Fungicide (chlorothalonil, mancozeb)",
+      "Remove affected lower leaves",
+      "Mulch to limit splashing"
+    ],
+    "prevention_fr": [
+      "Rotation des cultures",
+      "Tutorage pour aération",
+      "Arrosage au pied"
+    ],
+    "prevention_en": [
+      "Crop rotation",
+      "Staking for aeration",
+      "Water at the base"
+    ]
+  },
+  "Tomato___healthy": {
+    "class_id": 30,
+    "plant_fr": "Tomate",
+    "plant_en": "Tomato",
+    "disease_fr": "Plante saine",
+    "disease_en": "Healthy plant",
+    "is_healthy": true,
+    "severity": "saine",
+    "symptoms_fr": [
+      "Aucun symptôme détecté",
+      "Feuillage vert uniforme"
+    ],
+    "symptoms_en": [
+      "No symptoms detected",
+      "Uniform green foliage"
+    ],
+    "treatment_fr": [
+      "Aucun traitement nécessaire",
+      "Continuer les bonnes pratiques culturales"
+    ],
+    "treatment_en": [
+      "No treatment needed",
+      "Continue good cultural practices"
+    ],
+    "prevention_fr": [
+      "Inspecter les plants chaque semaine",
+      "Surveiller l'humidité et l'arrosage",
+      "Maintenir la rotation des cultures"
+    ],
+    "prevention_en": [
+      "Inspect plants weekly",
+      "Monitor humidity and watering",
+      "Maintain crop rotation"
+    ]
+  },
+  "Tomato___Late_blight": {
+    "class_id": 31,
+    "plant_fr": "Tomate",
+    "plant_en": "Tomato",
+    "disease_fr": "Mildiou tardif de la tomate",
+    "disease_en": "Late blight",
+    "is_healthy": false,
+    "severity": "critique",
+    "symptoms_fr": [
+      "Taches brunes irrégulières sur les feuilles",
+      "Duvet blanc sur la face inférieure par temps humide",
+      "Pourriture rapide des fruits (propagation en quelques jours)"
+    ],
+    "symptoms_en": [
+      "Irregular brown spots on leaves",
+      "White downy growth on underside in humid weather",
+      "Rapid rotting of fruits (spread within days)"
+    ],
+    "treatment_fr": [
+      "Retirer et brûler immédiatement les feuilles atteintes",
+      "Fongicide cuivre (bouillie bordelaise) en urgence",
+      "Décoction de prêle en bio"
+    ],
+    "treatment_en": [
+      "Immediately remove and burn affected leaves",
+      "Copper fungicide (Bordeaux mixture) urgently",
+      "Horsetail decoction for organic"
+    ],
+    "prevention_fr": [
+      "Rotation sur 3 ans minimum",
+      "Arroser au pied, jamais sur les feuilles",
+      "Variétés résistantes (Mountain Magic)"
+    ],
+    "prevention_en": [
+      "Crop rotation over 3 years minimum",
+      "Water at the base, never on leaves",
+      "Resistant varieties (Mountain Magic)"
+    ]
+  },
+  "Tomato___Leaf_Mold": {
+    "class_id": 32,
+    "plant_fr": "Tomate",
+    "plant_en": "Tomato",
+    "disease_fr": "Cladosporiose (moisissure des feuilles)",
+    "disease_en": "Leaf mold",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Taches jaunes diffuses sur la face supérieure des feuilles",
+      "Duvet brun-olive sur la face inférieure",
+      "Feuilles qui flétrissent en serre humide"
+    ],
+    "symptoms_en": [
+      "Diffuse yellow spots on upper leaf surface",
+      "Olive-brown mold on underside",
+      "Leaves wilting in humid greenhouse"
+    ],
+    "treatment_fr": [
+      "Aérer la serre et réduire l'humidité",
+      "Fongicide (chlorothalonil)",
+      "Retirer les feuilles atteintes"
+    ],
+    "treatment_en": [
+      "Ventilate greenhouse and reduce humidity",
+      "Fungicide (chlorothalonil)",
+      "Remove affected leaves"
+    ],
+    "prevention_fr": [
+      "Maintenir humidité < 85% en serre",
+      "Espacement large entre plants",
+      "Variétés résistantes"
+    ],
+    "prevention_en": [
+      "Keep humidity < 85% in greenhouse",
+      "Wide spacing between plants",
+      "Resistant varieties"
+    ]
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "class_id": 33,
+    "plant_fr": "Tomate",
+    "plant_en": "Tomato",
+    "disease_fr": "Septoriose de la tomate",
+    "disease_en": "Septoria leaf spot",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Nombreuses petites taches circulaires gris-beige sur feuilles",
+      "Points noirs (pycnides) au centre des taches",
+      "Défoliation de bas en haut"
+    ],
+    "symptoms_en": [
+      "Many small gray-beige circular spots on leaves",
+      "Black dots (pycnidia) at center of spots",
+      "Defoliation from bottom up"
+    ],
+    "treatment_fr": [
+      "Fongicide (chlorothalonil, mancozèbe)",
+      "Retirer toutes les feuilles atteintes",
+      "Paillage pour éviter contamination par éclaboussures"
+    ],
+    "treatment_en": [
+      "Fungicide (chlorothalonil, mancozeb)",
+      "Remove all affected leaves",
+      "Mulch to avoid splash contamination"
+    ],
+    "prevention_fr": [
+      "Rotation 3 ans",
+      "Élimination des débris en fin de saison",
+      "Tutorage pour aération"
+    ],
+    "prevention_en": [
+      "3-year rotation",
+      "Remove debris at end of season",
+      "Staking for aeration"
+    ]
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "class_id": 34,
+    "plant_fr": "Tomate",
+    "plant_en": "Tomato",
+    "disease_fr": "Acariens (tétranyques tisserands)",
+    "disease_en": "Two-spotted spider mites",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Petits points jaunes ou bronzés sur les feuilles",
+      "Fines toiles sur la face inférieure",
+      "Feuilles qui jaunissent et tombent"
+    ],
+    "symptoms_en": [
+      "Small yellow or bronze dots on leaves",
+      "Fine webbing on leaf underside",
+      "Leaves yellowing and falling"
+    ],
+    "treatment_fr": [
+      "Pulvérisation d'eau sous pression (déloge les acariens)",
+      "Savon noir ou huile de neem",
+      "Acaricide spécifique si forte infestation"
+    ],
+    "treatment_en": [
+      "High-pressure water spray (dislodges mites)",
+      "Soap or neem oil",
+      "Specific miticide if severe infestation"
+    ],
+    "prevention_fr": [
+      "Maintenir une humidité suffisante (les acariens aiment le sec)",
+      "Introduire des prédateurs (Phytoseiulus)",
+      "Inspection régulière sous les feuilles"
+    ],
+    "prevention_en": [
+      "Maintain sufficient humidity (mites like dry)",
+      "Introduce predators (Phytoseiulus)",
+      "Regular inspection under leaves"
+    ]
+  },
+  "Tomato___Target_Spot": {
+    "class_id": 35,
+    "plant_fr": "Tomate",
+    "plant_en": "Tomato",
+    "disease_fr": "Maladie des taches en cible",
+    "disease_en": "Target spot",
+    "is_healthy": false,
+    "severity": "modérée",
+    "symptoms_fr": [
+      "Taches brunes avec anneaux concentriques sur feuilles",
+      "Lésions creuses sur les fruits",
+      "Défoliation progressive"
+    ],
+    "symptoms_en": [
+      "Brown spots with concentric rings on leaves",
+      "Sunken lesions on fruits",
+      "Progressive defoliation"
+    ],
+    "treatment_fr": [
+      "Fongicide (chlorothalonil, azoxystrobine)",
+      "Retirer les feuilles atteintes",
+      "Améliorer la ventilation"
+    ],
+    "treatment_en": [
+      "Fungicide (chlorothalonil, azoxystrobin)",
+      "Remove affected leaves",
+      "Improve ventilation"
+    ],
+    "prevention_fr": [
+      "Rotation des cultures",
+      "Désinfection des outils",
+      "Éviter les excès d'humidité"
+    ],
+    "prevention_en": [
+      "Crop rotation",
+      "Tool disinfection",
+      "Avoid excess humidity"
+    ]
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "class_id": 36,
+    "plant_fr": "Tomate",
+    "plant_en": "Tomato",
+    "disease_fr": "Virus de la mosaïque de la tomate (ToMV)",
+    "disease_en": "Tomato mosaic virus",
+    "is_healthy": false,
+    "severity": "critique",
+    "symptoms_fr": [
+      "Mosaïque verte claire et foncée sur feuilles",
+      "Feuilles déformées, parfois filiformes",
+      "Réduction du rendement"
+    ],
+    "symptoms_en": [
+      "Light and dark green mosaic on leaves",
+      "Deformed leaves, sometimes thread-like",
+      "Yield reduction"
+    ],
+    "treatment_fr": [
+      "Aucun traitement curatif (virus)",
+      "Arracher et détruire les plants infectés",
+      "Laver les mains et les outils avec savon"
+    ],
+    "treatment_en": [
+      "No curative treatment (virus)",
+      "Uproot and destroy infected plants",
+      "Wash hands and tools with soap"
+    ],
+    "prevention_fr": [
+      "Variétés résistantes (gène Tm)",
+      "Semences saines",
+      "Pas de tabac à proximité (réservoir du virus)"
+    ],
+    "prevention_en": [
+      "Resistant varieties (Tm gene)",
+      "Healthy seeds",
+      "No tobacco nearby (virus reservoir)"
+    ]
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "class_id": 37,
+    "plant_fr": "Tomate",
+    "plant_en": "Tomato",
+    "disease_fr": "Virus de l'enroulement jaune de la tomate (TYLCV)",
+    "disease_en": "Tomato Yellow Leaf Curl Virus",
+    "is_healthy": false,
+    "severity": "critique",
+    "symptoms_fr": [
+      "Feuilles enroulées vers le haut, jaunissantes",
+      "Plant rabougri, croissance arrêtée",
+      "Chute des fleurs, peu de fruits"
+    ],
+    "symptoms_en": [
+      "Leaves curled upward, yellowing",
+      "Stunted plant, stopped growth",
+      "Flower drop, few fruits"
+    ],
+    "treatment_fr": [
+      "Aucun traitement curatif (virus)",
+      "Arracher et brûler les plants infectés",
+      "Lutter contre l'aleurode (vecteur)"
+    ],
+    "treatment_en": [
+      "No curative treatment (virus)",
+      "Uproot and burn infected plants",
+      "Control whitefly (vector)"
+    ],
+    "prevention_fr": [
+      "Variétés résistantes (label TYLCV)",
+      "Filets anti-insectes sous abri",
+      "Élimination des adventices hôtes"
+    ],
+    "prevention_en": [
+      "Resistant varieties (TYLCV-labeled)",
+      "Insect nets under cover",
+      "Remove host weeds"
+    ]
+  }
+}
